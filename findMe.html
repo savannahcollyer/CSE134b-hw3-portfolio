@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Simple demo Web page for CSE 134B" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> Find Me</title>
+	<link href="images/favicon.jpeg" rel="icon" />
+</head>
+<body>
+    <p>U &nbsp;C &nbsp;S &nbsp;D</p>
+    <header>
+        <nav>
+            <a href="index.html">Savannah Collyer</a> 
+            <a href="aboutMe.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="findMe.html">Find Me</a>
+        </nav>
+    </header>
+    <main>
+    <h2>LinkedIn</h2>
+    <p><a href="www.linkedin.com/in/savannah-collyer">/savannah-collyer</a></p>
+    <h2>Email Me</h2>
+    <button onclick="location.href='mailto:scollyer@ucsd.edu'" class="iconbuttons">scollyer@ucsd.edu</button><br>
+    <h2>Github</h2>
+    <p><a href="https://github.com/savannahcollyer">/savannahcollyer</a></p>
+    <h2>Instagram</h2>
+    <p><a href="https://www.instagram.com/savannah_collyer/?hl=en">@savannah_collyer</a></p>
+    <details>
+    <Summary> Questions or Concerns? Please let me know!</summary>
+        <form action="/action_page.php">
+            <fieldset>
+            <legend></legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="explanation">Reason for Contacting:</label>
+            <input list="explanationList" name="explanation" id="explanation"> <br><br>
+            <datalist id="explanationList">
+                <option value="Questions about website">
+                <option value="Questions about projects">
+                <option value="Other: ">
+                </datalist>
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="communicateList">Preferred Method of Communcation:</label>
+            <select name="communicateList" id="communicateList">
+                <optgroup label="By computer: ">
+                    <option value="Email Me">Email Me</option>
+                    </optgroup>
+                <optgroup label="By Phone: ">
+                <option value="Call Me">Call Me</option>
+                <option value="Text Me">Text Me</option>
+                </optgroup>
+                </select>
+            <br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br> 
+            <button type="submit" value="Submit">Submit</button>
+            </fieldset>
+        </form>
+     </details>
+    </main>
+    <footer>
+        <hr> 
+        <p>Thanks for reading!</p>
+        <svg height="30" width="200">
+            <text x="0" y="15" fill="red">XOXO Savannah Collyer</text>
+        </svg>
+
+    </footer>
+</body>
+</html>
