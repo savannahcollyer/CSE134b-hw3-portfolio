@@ -3,7 +3,7 @@ html,
 body {
     background-color: #e8e6e6;
     margin:0;
-    font-family: "DM Sans";
+    font-family: "DM Sans", Verdana;
 }
 
 :root {
@@ -21,7 +21,6 @@ body {
 
   @font-face {
     font-family: "Dm Sans";
-    font-style: bold;
     font-weight: 700;
     src: url("../fonts/DM_Sans/DMSans-Bold.ttf") format("truetype");
     font-display: fallback;
@@ -47,7 +46,7 @@ nav > a {
   padding: 14px 16px;
   font-size: 17px;
   font-family: "DM Sans";
-  transform: 600ms, color 600 ms;
+  transition: transform 600ms;
   text-decoration: none;
 
 }
