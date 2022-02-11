@@ -119,6 +119,10 @@ tbody, tr, td {
         grid-auto-rows: minmax(100px, auto);
     }
 
+    .me-img {
+        display: none;
+    }
+
      .exp-img {
         padding: 10px;
         display: block;
