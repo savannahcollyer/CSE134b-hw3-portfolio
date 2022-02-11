@@ -9,9 +9,8 @@
 	<meta name="author" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> About Me</title>
-    <style>
-        h2{text-align: center;}
-    </style>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/about.css">
 	<link href="images/favicon.jpeg" rel="icon" />
 </head>
 
@@ -25,18 +24,9 @@
         </nav>    
     </header>
     <main>
-        <canvas id="rectangleCircle" width="300" height="176">
-        </canvas>
-        <script>
-            var circle = document.getElementById("rectangleCircle");
-            var creatingCircle = circle.getContext("2d");
-            creatingCircle.beginPath();//circle shape begin
-            creatingCircle.arc(100,100,75,4,4*Math.PI);//circle x, y and size of the circle
-            creatingCircle.stroke();//stroke of the circle
-            creatingCircle.font = "30px Times New Roman";//Creating a font
-            creatingCircle.strokeText("About Me",40,110);// Creating text inside the circle
-        </script>  
-        <h2>Reading</h2>
+        <section class="interest-grid">
+        <div class="col1-interest">
+        <h1 class="header1"> Reading </h1>
         <p> I try to read about 4 books a month which means that I have read <em>many</em> books in my life. I really enjoy thriller books that have an unexpected plot twist at the end. 
             My  <strong>absolute favorite book</strong> that I highly reccomend is <a href="https://www.amazon.com/Silent-Patient-Alex-Michaelides/dp/1250301696">The Silent Patient.</a> </p>
         <p>Other books I reccomend:</p>
@@ -46,13 +36,15 @@
             <li><a href="https://www.amazon.com/Last-Thing-He-Told-Me/dp/1501171348">The Last Thing He Told Me</a></li>
             <li><a href="https://www.amazon.com/We-Were-Liars-Lockhart/dp/038574126X">We Were Liarrs</a></li>
         </ul>
-        <p>In addition to novels I also really like to read poetry and have even written a few of my own poems. The poem below is one of my favorites because it is so simple yet so comforting.</p>
-       <p> <pre>
+        <p>In addition to novels I also really like to read poetry and have even written a few of my own poems. </p>
+        </div>
+        <div class="col2-interest">
+       <p><pre>
             The Orange
 
             At lunchtime I bought a huge orange—
             The size of it made us all laugh.
-            I peeled it and shared it with Robert and Dave—
+            I peeled it and shared it with Robert and Dave—     
             They got quarters and I had a half.
 
             And that orange, it made me so happy,
@@ -67,7 +59,9 @@
 
             — Wendy Cope 
         </pre></p>
-        <h2>Cooking</h2>
+        </div>
+        <div class="col1-interest">
+        <h1 class="header2">Cooking</h1>
         <p>When I was younger, my dad had 6 signature meals he used to make for my siblings and I. I used to sit in the kitchen and watch him while he'd teach me how to chop certain 
             vegetables and what spices should be used in which meals. Since I left home for college, I have perfected my dad's signature recipes and have tried to recreate at least one new 
             recipe every week. My favorite kind of foods to make are soups because I feel like nothing is more comforting than homemade soup on a cold day.</p>
@@ -80,29 +74,46 @@
 
         </ol>
         <template>This is hidden content but soon I will show a picture of my favorite recipe that I've done!</template>
-        <h2>Pets</h2>
+        </div>
+        <div class="col2-interest">
+            <img src="images/recipe.jpg" alt="Photo of recipe I made" class="recipe-img" width="50%" height="auto">
+        </div>
+        <div class="col1-interest">
+        <h1>Pets</h1>
         <p>At home I have 5 dogs: a Golden Retriever named Leo, a Border Collie named Hope, a Chihuhua mix named Ebby, a Chihuhua mix named Lily, and a Chiweenie named Kojak. I love to take my dogs
             out on walks, hikes, and teach them new tricks. Even though you shouldn't pick favorites with pets, Kojak is and always will be the best animal I've ever had. He was born with a genetic 
             condition that made him bald and have very few teeth. He loves to cuddle, sleep, and wear some of his favorite clothes.
         </p>
         <p>This is Kojak! :)</p>
-        <picture>
+        </div>
+        <div class="col2-interest">
+        <picture >
             <source media="(min-width:650px)" srcset="images/Kojak1.jpg">
-            <img src="images/Kojak2.jpg" alt="Kojak"  width="300" height="350">
+            <img src="images/Kojak2.jpg" alt="Kojak"  width="50%" height="auto">
           </picture>
-        <h2>Music</h2>
-        <iframe src="https://open.spotify.com/embed/playlist/4jDx9G5OuE4DXXibUVKNHU" width="1000" height="380" allow="encrypted-media"></iframe>        <p>Click on the play button to play my favorite song:</p>
+        </div>
+        <div class="col1-interest">
+        <h1>Music</h1>
+        <p class="music">I have always really enjoyed listening to music and during quaratine I spent a lot of time finding new songs and curating new playlists. Most of the time I like to listen to alternative/indie music, but when I am going out with friends I prefer house music.
+            The playlist I have shown here is one of my favorite ones and mostly consists of indie and alternative songs. Check it out!
+        </p>
+        <p>Click on the play button to play my favorite song:</p>
             <audio controls>
             <source src="images/TheDistricts.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
             </audio>
+        </div>
+        <iframe class="col2-interest" src="https://open.spotify.com/embed/playlist/4jDx9G5OuE4DXXibUVKNHU" width="100%" height="100%" allow="encrypted-media"></iframe>  
+    </section>
     </main>
     <footer>
-        <hr> 
-        <p>Thanks for reading!</p>
+        <br>
         <svg height="30" width="200">
-            <text x="0" y="15" fill="red">XOXO Savannah Collyer</text>
+            <text x="0" y="15" fill="black">XOXO Savannah Collyer</text>
         </svg>
+        <code>System.out.println("<span style="justify-self: center;">Thanks for reading!</span>");</code>
+        <br>
+        <br>
     </footer>
 </body>
 

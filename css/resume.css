@@ -1,0 +1,35 @@
+
+main {
+    display:block;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-left: 15%;
+}
+
+p {
+    display: none;
+}
+
+@media screen and (max-width: 820px) {
+    main {
+        margin: 0;
+    }
+    embed {
+        display: none;
+    }
+    
+    p {
+        padding-top: 20px;
+        display: block;
+        margin-right: 10%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 6rem;  
+
+    }
+}
+

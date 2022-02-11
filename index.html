@@ -8,10 +8,11 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript" />
 	<meta name="author" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Savannah Collyer</title>
+    <title>Savannah Collyer</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/global.css">
 	<link href="images/favicon.jpeg" rel="icon" />
 </head>
-
 <body>
     <header>
         <nav>
@@ -20,78 +21,85 @@
             <a href="resume.html">Resume</a>
             <a href="findMe.html">Find Me</a>
         </nav>
-        <p><code>System.out.println("<span style="color:red">Amazon SDE</span>");</code></p>
+        <br>
     </header>
     <main>
-        <h2> Who am I?</h2>
-        <hr>
-         <img src="images/me.jpg" alt="Photo of Me" width="300" height="200">
-            <p>  I am a fourth year Computer Science major at the University of California San Diego. I will be graduating this June with a Bachelors degree and starting
+        <h1> Who am I?</h1>
+        <section class="me-grid">
+         <img src="images/me.jpg" alt="Photo of Me" class="me-img" width="100%" height="auto">
+            <p class= "col2-me">  I am a fourth year Computer Science major at the University of California San Diego. I will be graduating this June with a Bachelors degree and starting
                  as an SDE at Amazon in August. If you want to know more about my personal intersets and hobbies feel free to visit my About Me page :).
             </p>
-        <h2>Experience and Projects</h2>
-        <hr>
-        <div>
-            <h3>Amazon</h3>
-            <img src="images/amazonLogo.jpeg" alt="Amazon Logo" width="300" height="200">
-                <h4> SDE Intern | <i>June 2021 - Sep 2021</i></h4>
+         </section>
+         <br>
+        <h1>Experience and Projects</h1>
+        <section class="exp-grid">
+        <div class="col-1">
+            <h2>Amazon</h2>
+            <h3> SDE Intern | <i>June 2021 - Sep 2021</i></h3>
+            <img src="images/amazonLogo.jpeg" alt="Amazon Logo" class="exp-img" width="60%" height="auto">
+         </div>
+                <div class="col-2">
                 <ul>
                     <li>Worked as an intern on the Alexa Guard team to create a better user experience for customers to connect their Alexa devices to Guard. </li>
                     <li>Utilized Java, JUnit testing including the use of Mockito, and DynamoDB to plan and implement a voice experience from start to finish. </li>
                     <li>The voice experience prompts customers to add their eligible Echo device to their Guard profile when they put Guard into Away mode.</li>
-                 </ul>              
+                 </ul>  
+                </div>
+        <div class="col-1">
+            <h2>American Express</h2>
+            <h3>SWE Intern | <i>July 2020 - Aug 2020</i> </h3>
+            <img src="images/amEx.png" alt="American Express Logo" class="exp-img"  width="60%" height="auto">
         </div>
-        <div>
-            <h3>American Express</h3>
-            <img src="images/amEx.png" alt="American Express Logo" width="300" height="200">
-                <h4>SWE Intern | <i>July 2020 - Aug 2020</i> </h4>
+                <div class="col-2">
                 <ul>
                     <li>Worked as an intern on the American Express mobile app team on the Mobile Card Replacement feature.</li>
                     <li>Utilized Kotlin and the Android Framework to implement accessibility such that the feature will be equally accessible to <b>all</b> users</li>
                     <li>Added tracking to the feature in order to provide the Analytics team with the necessary data to improve user experience.</li>
-                 </ul>                               
+                 </ul>    
+                </div>                           
+        <div class="col-1">
+            <h2>UCSD CSE Department</h2>
+            <h3> CSE Tutor | <i>Jan 2019 - Present</i>  </h3>
+            <img src="images/UCSDlogo.jpeg.crdownload" alt="UCSD CSE Logo" class="exp-img"  width="60%" height="auto">
         </div>
-        <div>
-            <h3>UCSD CSE Department</h3>
-            <img src="images/UCSDlogo.jpeg.crdownload" alt="UCSD CSE Logo" width="300" height="200">
-                <h4> Tutor | <i>Jan 2019 - Present</i>  </h4>
+                <div class="col-2">
                 <ul>
-                    <li>Tutor for Software Engineering, Data Structures Object Oriented Design, and Software Tools Techniques (CSE 110, 12 15L respectively) with Instructor <br>Gary Gillespie as well as for Advanced Data Structures (CSE 100) with Instructor Niema Moshiri.</li>
-                    <li>Provide students with targeted assistance in their course work during office hours. This coursework consists of utilizing data structures to solve <br> theoretical problems and creating web and mobile applications from scratch.</li>
-                  </ul>  
-                <aside>
-                    <p>I have tutored a total of 6 and (soon 7) different classes and I have learned a lot from each of them. However, I would say that CSE 100 was my favorite class to tutor because it gives students the most
-                        freedom in terms of how they implement their assignments. As a result, I have gotten to see so many great yet different approaches to each assignment.</p>
-                </aside>         
+                    <li>Tutor for Software Engineering, Data Structures Object Oriented Design, and Software Tools Techniques (CSE 110, 12 15L respectively) with Instructor Gary Gillespie as well as for Advanced Data Structures (CSE 100) with Instructor Niema Moshiri.</li>
+                    <li>Provide students with targeted assistance in their course work during office hours. This coursework consists of utilizing data structures to solve theoretical problems and creating web and mobile applications from scratch.</li>
+                  </ul>
+                </div>           
+        <div class="col-1">
+            <h2>Almounds</h2>
+            <h3> Front End Developer | <i>March 2020 - June 2020</i> </h3>
+            <picture class="exp-img">
+                <source srcset="images/almoundsLogo.webp" class="exp-img" type="image/webp" width="60%" height="auto">
+                <img src="images/almoundsLogo.png" class="exp-img" alt="Almounds logo" width="60%" height="auto">
+            </picture>
+     
         </div>
-        <div>
-            <h3>Almounds</h3>
-            <img src="images/almoundsLogo.png" alt="Almounds Logo" width="300" height="200">
-                <h4> Front End Developer | <i>March 2020 - June 2020</i> </h4>
+                <div class="col-2">
                 <ul>
                     <li>As Project Lead and Developer, created an application for the CCAGA with the goal of digitizing and simplifying their process for stockpiling and shelling almonds.</li>
                     <li>Using React Native and React Navigation, created a multi platform dynamic application for the cataloging of almond truckloads and their algorithmic placement.</li>
                 </ul>
-                <video width="320" height="240" controls>
-                    <source src="images/Almounds.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+                </div>
+         <div class="col-1">
+            <h2>Autograder</h2>
+            <h3> Program Manager | <i>October 2018 - June 2021</i></h3>
+            <img src="images/autograderLogo.png" alt="Autograder Logo" class="exp-img"  width="60%" height="auto">
          </div>
-         <div>
-             <br>
-            <h3>Autograder</h3>
-            <img src="images/autograderLogo.png" alt="Autograder Logo" width="300" height="200">
-                <h4> Program Manager | <i>October 2018 - June 2021</i></h4>
+                <div class="col-2">
                 <ul>
                     <li>Project Manager and Front End Developer of the UCSD CSE department’s queuing and automated grading website (autograder.ucsd.edu).</li>
                     <li>Lead a team of peers in rewriting our application with newer technologies by migrating to a newer React Axios stack paired with the popular Material UI Framework.</li>
                 </ul>
-                <figure>
-                    <img src="images/Autograder.png" alt="Trulli" width=700>
-                    <figcaption>A snapshot of the site from the tutor point of view.</figcaption>
-                  </figure>         
-        </div>
+           
+                </div>       
+        </section>
         <br>
+        <h1>Skills</h1>
+        <div class="skills-table">
         <table>
             <caption>Experience with programming languages.</caption>
             <colgroup>
@@ -140,13 +148,16 @@
                 </tr>
             </tbody>
         </table>
+    </div>
     </main>
     <footer>
-        <hr> 
-        <p>Thanks for reading!</p>
+        <br>
         <svg height="30" width="200">
-            <text x="0" y="15" fill="red">XOXO Savannah Collyer</text>
+            <text x="0" y="15" fill="black">XOXO Savannah Collyer</text>
         </svg>
+        <code>System.out.println("<span style="justify-self: center;">Thanks for reading!</span>");</code>
+        <br>
+        <br>
     </footer>
 </body>
 </html>

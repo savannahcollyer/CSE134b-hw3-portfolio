@@ -8,11 +8,12 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript" />
 	<meta name="author" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title> Find Me</title>
+    <title> Find Me</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/findMe.css">
 	<link href="images/favicon.jpeg" rel="icon" />
 </head>
 <body>
-    <p>U &nbsp;C &nbsp;S &nbsp;D</p>
     <header>
         <nav>
             <a href="index.html">Savannah Collyer</a> 
@@ -22,14 +23,40 @@
         </nav>
     </header>
     <main>
-    <h2>LinkedIn</h2>
+    <section class="find-grid">
+    <div class="top-left">
+    <h1>LinkedIn</h1>
     <p><a href="www.linkedin.com/in/savannah-collyer">/savannah-collyer</a></p>
-    <h2>Email Me</h2>
+    <picture>
+        <source srcset="images/linkedInLogo.webp" type="image/webp" width="50%" height="auto">
+        <img src="images/linkedInLogo.png" alt="Github" logo” width="50%" height="auto">
+    </picture>
+    </div>
+    <div class="top-right">
+    <h1>Email Me</h1>
     <button onclick="location.href='mailto:scollyer@ucsd.edu'" class="iconbuttons">scollyer@ucsd.edu</button><br>
-    <h2>Github</h2>
+    <picture>
+        <source srcset="images/gmailLogo.webp" type="image/webp" width="40%" height="auto">
+        <img src="images/gmailLogo.png" alt="Gmail" logo” width="40%" height="auto">
+    </picture>
+    </div>
+    <div class="bottom-left">
+    <h1>Github</h1>
     <p><a href="https://github.com/savannahcollyer">/savannahcollyer</a></p>
-    <h2>Instagram</h2>
+    <picture>
+        <source srcset="images/githubLogo.webp" type="image/webp" width="60%" height="auto">
+        <img src="images/githubLogo.png" alt="Github" logo” width="60%" height="auto">
+    </picture>
+    </div>
+    <div class="bottom-right">
+    <h1>Instagram</h1>
     <p><a href="https://www.instagram.com/savannah_collyer/?hl=en">@savannah_collyer</a></p>
+    <picture>
+        <source srcset="images/instagramLogo.webp" type="image/webp" width="45%" height="auto">
+        <img src="images/instagramLogo.png" alt=“Instagram logo” width="45%" height="auto">
+    </picture>
+        </div>
+    </section>
     <details>
     <Summary> Questions or Concerns? Please let me know!</summary>
         <form action="/action_page.php">
@@ -60,21 +87,22 @@
                 <option value="Text Me">Text Me</option>
                 </optgroup>
                 </select>
-            <br>
+            <br><br>
             <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br><br> 
+            <textarea id="message" name="message" rows="6" cols="40"></textarea><br><br> 
             <button type="submit" value="Submit">Submit</button>
             </fieldset>
         </form>
      </details>
     </main>
     <footer>
-        <hr> 
-        <p>Thanks for reading!</p>
+        <br>
         <svg height="30" width="200">
-            <text x="0" y="15" fill="red">XOXO Savannah Collyer</text>
+            <text x="0" y="15" fill="black">XOXO Savannah Collyer</text>
         </svg>
-
+        <code>System.out.println("<span style="justify-self: center;">Thanks for reading!</span>");</code>
+        <br>
+        <br>
     </footer>
 </body>
 </html>
